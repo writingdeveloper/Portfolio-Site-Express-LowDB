@@ -1,0 +1,207 @@
+html {
+  background-color: #E8E8E8;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* This CSS code is for Google Nexus 5 and iPad */
+
+@media screen and (max-width:768px) {
+  img {
+    width: 100%;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    order: 0;
+  }
+
+  .name {
+    width: 100%;
+    order: 1;
+    font-weight: 300;
+    color: #5e5e5e;
+    margin: 0px 0px;
+  }
+
+  .job {
+    width: 100%;
+    order: 2;
+    font-weight: 300;
+    color: #5e5e5e;
+    margin: 0px;
+  }
+
+  .first-hr {
+    width: 100%;
+    order: 3;
+    border: solid 1px;
+    color: #2d3c49;
+  }
+
+  .article {
+    width: 100%;
+    order: 4;
+  }
+
+  .work {
+    width: 100%;
+    font-weight: 500;
+    color: #5e5e5e;
+    order: 5;
+  }
+
+  .work-container {
+    width: 100%;
+    order: 6;
+    font-weight: 200;
+  }
+
+  .project-name {
+    font-weight: 500;
+    color: #5e5e5e;
+  }
+
+  .second-hr {
+    width: 100%;
+    order: 0;
+    border: solid 1px;
+    color: #2d3c49;
+  }
+
+  .reactchat {
+    width: 100%;
+    order: 1;
+  }
+
+  .footer {
+    order: 7;
+    font-weight: 500;
+    color: #2d3c49;
+  }
+}
+
+/* This CSS code is for Desktop Environment */
+
+@media screen and (min-width:769px) {
+  body {
+    margin: 2% 20% 2% 20%;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    order: 0;
+  }
+
+  .logo-container {
+    width: 10%;
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-container {
+    width: 90%;
+  }
+
+  .first-hr {
+    width: 100%;
+    order: 0;
+    border: solid 1px;
+    color: #2d3c49;
+  }
+
+  .name {
+    width: 90%;
+    font-weight: 450;
+    font-size: 45px;
+    color: #5e5e5e;
+    text-align: right;
+    padding-left: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .job {
+    width: 90%;
+    font-weight: 300;
+    color: #5e5e5e;
+    text-align: right;
+    padding-left: 10%;
+    margin-top: 0;
+  }
+
+  .article {
+    width: 100%;
+  }
+
+  .image-cover {
+    width: 100%;
+    height: 100%;
+  }
+
+  .work-title {
+    width: 100%;
+    font-weight: 500;
+    color: #5e5e5e;
+  }
+
+  .work-container {
+    width: 100%;
+    font-weight: 200;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .image {
+    width: 100%;
+    height: 200px;
+    margin-top: 0;
+  }
+
+  .work {
+    width: 320px;
+    margin-right: 25px;
+  }
+
+  .project-name {
+    font-weight: 500;
+    color: #5e5e5e;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .second-hr {
+    width: 100%;
+    border: solid 1px;
+    color: #2d3c49;
+  }
+
+  .project-url {
+    margin-top: 0;
+  }
+}

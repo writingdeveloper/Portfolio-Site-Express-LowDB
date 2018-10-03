@@ -1,0 +1,10 @@
+extends layout
+
+block content
+
+    form(method='post', action='/post')
+        input(type='text', name='projectName')
+        input(type='text', name='projectURL')
+        input(type='text', name='projectExplanation')
+        input(type='text', name='projectImgURL')
+        input(type='submit')

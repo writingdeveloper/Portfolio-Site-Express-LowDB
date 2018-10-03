@@ -1,0 +1,42 @@
+extends layout
+
+block content
+  .container
+  header.header
+    .logo-container
+      img.logo(src='images/logo.png')
+    .profile-container
+      h1.name Si Hyeong Lee
+      h2.job Front-End Developer
+  hr.first-hr
+  article.article
+    img.image-cover(src='images/coverimg.jpg')
+  h2.work-title Featured Work
+  .work-container
+    hr.second-hr
+    .work
+      a(href=`${url}`)
+        img.image(src=`${imgurl}`, alt='My Projects')
+      h2.project-name
+        = `${title}`
+      p.project-url
+        a(href=`${url}`, target='_blank')
+          =`${url}`
+      p
+        = `${explanation}`
+    //- .work
+    //-   img.image(src='images/arduino.png', alt='My Projects')
+    //-   h2.project-name BlueInno2 Projects
+    //-   p.project-url
+    //-     a(href='https://github.com/sangumee/Blueinno2', target='_blank') https://github.com/sangumee/Blueinno2
+    //- .work
+    //-   img.image(src='images/api.png', alt='My Projects')
+    //-   h2.project-name Public API Projects
+    //-   p.project-url
+    //-     a(href='https://github.com/sangumee/Public-Data-Project', target='_blank') https://github.com/sangumee/Public-Data-Project
+  footer.footer
+    p Copyright &copy; 2018 Si Hyeong Lee, sangumee
+    form
+      input(type='button', value='Create Information', onclick="window.location.href='/create'")
+    
+
