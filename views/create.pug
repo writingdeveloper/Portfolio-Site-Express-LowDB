@@ -1,10 +1,16 @@
 extends layout
 
 block content
-
-    form(method='post', action='/post')
-        input(type='text', name='projectName')
-        input(type='text', name='projectURL')
-        input(type='text', name='projectExplanation')
-        input(type='text', name='projectImgURL')
-        input(type='submit')
+    form(method='post', action='/create_process' enctype="multipart/form-data")
+        label(for="projectName") Project Name :
+        input(type="text" id="projectName" name="projectName")
+        br
+        label(for="projectUrl") Project URL :
+        input(type="text" id="projectUrl" name="projectUrl")
+        br
+        label(for="projectExplanation") Project Explanation : 
+        textarea(cols="30", rows="10" id="projectExplanation" name="projectExplanation")
+        br
+        label(for="projectImg") Project Immage Upload
+        input(type="file" id="projectImg" name="projectImg")
+        input(type="submit")
