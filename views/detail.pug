@@ -1,0 +1,80 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible', content='ie=edge')
+  title Project Detail
+  link(rel='stylesheet', href='stylesheets/detail.css')
+// 작업물
+section#works.l-section(role='region')
+  .l-section-holder
+    h2.section-heading(data-animation='fade-up')
+      span.secondary Portfolio
+      span.primary= name
+    #portfolio.section-content.gallery.alternate
+      // 포트폴리오 엔트리: 예술의 전당
+      article#work1.gallery-item(role='article', data-animation='fade-left')
+        figure.gallery-figure(role='group')
+          .gallery-image
+            img.gallery-image-thumb(src=`/images/${imgurl}`, alt='예술의 전당 랜딩 페이지', aria-describedby='work1Description')
+          figcaption.gallery-caption
+            h3.gallery-title &#xC608;&#xC220;&#xC758; &#xC804;&#xB2F9; &#xB79C;&#xB529; &#xD398;&#xC774;&#xC9C0;
+            ul.gallery-spec
+              li.gallery-spec-item
+                strong.gallery-spec-key Viewport
+                span.gallery-spec-value &#xBC18;&#xC751;&#xD615;
+              li.gallery-spec-item
+                strong.gallery-spec-key IE support
+                span.gallery-spec-value IE9+
+            #work1Description
+              p
+                a(href='http://www.sac.or.kr/', target='_blank') &#xC608;&#xC220;&#xC758; &#xC804;&#xB2F9; &#xC0AC;&#xC774;&#xD2B8;
+                | &#xC758; &#xBA54;&#xC778; &#xD398;&#xC774;&#xC9C0;&#xB97C; &#xBD80;&#xD2B8;&#xC2A4;&#xD2B8;&#xB7A9; 4&#xB97C; &#xAE30;&#xBC18;&#xC73C;&#xB85C; &#xD55C; &#xBC18;&#xC751;&#xD615; &#xAD6C;&#xC870;&#xB85C; &#xB9AC;&#xB274;&#xC5BC;&#xD574;
+                |                   &#xBCF4;&#xC558;&#xC2B5;&#xB2C8;&#xB2E4;.
+              p
+                a(href='https://v4-alpha.getbootstrap.com/', target='_blank') &#xBD80;&#xD2B8;&#xC2A4;&#xD2B8;&#xB7A9;&#xC758; 4 alpha &#xBC84;&#xC804;
+                | &#xC744; &#xAE30;&#xBC18;&#xC73C;&#xB85C; &#xC81C;&#xC791;&#xB418;&#xC5C8;&#xACE0;, &#xC774;
+                |                   &#xBC84;&#xC804;&#xC758;
+                |                   &#xBD80;&#xD2B8;&#xC2A4;&#xD2B8;&#xB7A9;&#xC774; &#xC0AC;&#xC6A9;&#xD558;&#xB294; Sass&#xB97C; &#xD14C;&#xB9C8; &#xC81C;&#xC791;&#xC5D0;&#xB3C4; &#xC0AC;&#xC6A9;&#xD588;&#xC73C;&#xBA70;, IE9+&#xB97C; &#xC9C0;&#xC6D0;&#xD558;&#xB294; jQuery 3.1 &#xBC0F; jQuery UI&#xAC00; &#xC0AC;&#xC6A9;&#xB418;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;.
+            .ui-group
+              a.ui-button(role='button', href='./Portfolio-SAC/', target='_blank') Demo
+              a.ui-button(role='button', href='https://github.com/findawayer/Portfolio-SAC/tree/gh-pages', target='_blank') Repos
+        table.gallery-table
+          thead
+            tr
+              th.gallery-table-col.category Category
+              th.gallery-table-col.source Source
+              th.gallery-table-col.keywords Related keywords
+          tbody
+            tr
+              td(data-th='Category')
+                span.categ.html HTML
+              td(data-th='Source')
+                a(href='https://github.com/findawayer/Portfolio-SAC/blob/gh-pages/index.html', target='_blank') index.html
+              td(data-th='Related Keywords') HTML5, ARIA, SVG
+            tr
+              td(data-th='Category')
+                span.categ.css CSS
+              td(data-th='Source')
+                a(href='https://github.com/findawayer/Portfolio-SAC/blob/gh-pages/scss/bootstrap-theme.scss', target='_blank') bootstrap-custom.css
+              td(data-th='Related Keywords') Responsive, Bootstrap 4
+            tr
+              td(data-th='Category')
+                span.categ.css CSS
+              td(data-th='Source')
+                a(href='https://github.com/findawayer/Portfolio-SAC/blob/gh-pages/scss/style.scss', target='_blank') style.scss
+              td(data-th='Related Keywords') CSS3, Sass, Compass
+            tr
+              td(data-th='Category')
+                span.categ.css CSS
+              td(data-th='Source')
+                a(href='https://github.com/findawayer/Portfolio-SAC/tree/gh-pages/scss/partials', target='_blank') Sass partials
+              td(data-th='Related Keywords') CSS3, Sass, Compass, Responsive
+            tr
+              td(data-th='Category')
+                span.categ.js JS
+              td(data-th='Source')
+                a(href='https://github.com/findawayer/Portfolio-SAC/blob/gh-pages/js/main.js', target='_blank') main.js
+              td(data-th='Related Keywords')
+                | JavaScript, jQuery 3, 
+                a(href='http://kenwheeler.github.io/slick/', target='_blank') slick
