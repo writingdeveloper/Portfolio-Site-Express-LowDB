@@ -6,6 +6,11 @@ router.use(bodyParser.json()); // to support JSON-encoded bodies
 router.use(bodyParser.urlencoded({ // to support URL-encoded bodies
   extended: true
 }));
+// Parsing Dependency
+var cheerio = require('cheerio');
+var request = require('request');
+
+
 // LowDB Module
 const low = require('lowdb');
 const FileSync = require('lowdb/adapters/FileSync');
@@ -74,16 +79,42 @@ router.post('/create_process', upload.single('projectImg'), function (req, res, 
 
 router.get('/:id', (req, res, next) => {
   // GET URL params and put it into :id
-  var id = req.params.id;
-  let data = db.get('project').find({id:id}).value();
-  console.log(data);
-  console.log(id);
-  res.render('detail', {
-    dataarray: data,
-    name: data.name,
-    url: data.url,
-    explanation: data.explanation,
-    imgurl: data.imgurl
+  let id = req.params.id;
+  let data = db.get('project').find({
+    id: id
+  }).value();
+
+
+  let url = data.githuburl;
+  request(url, function (error, response, html) {
+    if (error) {
+      throw error
+    };
+    // console.log(html);
+    var $ = cheerio.load(html);
+
+    $('#readme').each(function () {
+      // console.log($(this).html());
+
+
+
+      let readme = $(this).html();
+      console.log(readme);
+
+      // let markdown=request.html
+      // console.log(data);
+      // console.log(id);
+      res.render('detail', {
+        dataarray: data,
+        name: data.name,
+        url: data.url,
+        explanation: data.explanation,
+        imgurl: data.imgurl,
+        markdown: readme
+        // startDate: pjdate1,
+        // endDate: pjdate2
+      });
+    });
   });
 });
 
