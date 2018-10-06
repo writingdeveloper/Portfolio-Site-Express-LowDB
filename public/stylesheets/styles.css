@@ -231,8 +231,12 @@ nav h1 a {
 
 /* ====================== Create Page CSS ====================== */
 
-#create-body{
+#create-body {
   background-color: #659DBD;
+}
+
+#create_p {
+  display: inline
 }
 
 #create-container {
@@ -247,6 +251,8 @@ nav h1 a {
 .create_form {
   margin-top: 15px;
 }
+
+
 
 
 

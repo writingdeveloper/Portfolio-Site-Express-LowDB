@@ -56,6 +56,7 @@ dt {
     max-width: 1320px;
     margin: 0 auto;
 }
+
 ul,
 menu,
 dir {
@@ -165,6 +166,11 @@ figure {
 .gallery-spec {
     margin: 2em 0;
     padding: 0;
+}
+
+.gallery-image-thumb {
+    width: 730px;
+    max-height: 444px;
 }
 
 .gallery-item {
@@ -301,4 +307,55 @@ table {
     font-family: "Quicksand", sans-serif;
     font-size: .92rem;
     text-align: center;
+}
+
+/* Markdown */
+.Box--condensed {
+    line-height: 1.25;
+}
+
+.Box {
+    background-color: #fff;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+}
+
+.Box--condensed .Box-header {
+    padding: 8px 16px;
+}
+
+.px-2 {
+    padding-right: 8px !important;
+    padding-left: 8px !important;
+}
+
+.Box-header {
+    padding: 16px;
+    margin: -1px -1px 0 -1px;
+    background-color: #f6f8fa;
+    border-color: #d1d5da;
+    border-style: solid;
+    border-width: 1px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+div#readme p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 15px 15px 15px 15px;
+    font-family: "Quicksand", sans-serif;
+}
+
+div#readme h1{
+    font-size: 20px;
+}
+
+.Box-title{
+    padding:0px;
 }
