@@ -18,11 +18,11 @@ section#works.l-section(role='region')
           .gallery-image
             img.gallery-image-thumb(src=`/images/${imgurl}`, alt='예술의 전당 랜딩 페이지', aria-describedby='work1Description')
           figcaption.gallery-caption
-            h3.gallery-title &#xC608;&#xC220;&#xC758; &#xC804;&#xB2F9; &#xB79C;&#xB529; &#xD398;&#xC774;&#xC9C0;
+            h3.gallery-title= name
             ul.gallery-spec
               li.gallery-spec-item
-                strong.gallery-spec-key Viewport
-                span.gallery-spec-value &#xBC18;&#xC751;&#xD615;
+                strong.gallery-spec-key Programming Language
+                span.gallery-spec-value= sumlang
               li.gallery-spec-item
                 strong.gallery-spec-key IE support
                 span.gallery-spec-value IE9+
