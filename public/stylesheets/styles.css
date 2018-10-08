@@ -229,33 +229,6 @@ nav h1 a {
   text-transform: uppercase; */
 /* } */
 
-/* ====================== Create Page CSS ====================== */
-
-#create-body {
-  background-color: #659DBD;
-}
-
-#create_p {
-  display: inline
-}
-
-#create-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 100vh;
-}
-
-.create_form {
-  margin-top: 15px;
-}
-
-
-
-
-
 
 @media screen and (max-width: 700px) {
 
