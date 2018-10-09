@@ -38,4 +38,6 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+console.log('Now It Works Fine in Port 3000');
+
 module.exports = app;
