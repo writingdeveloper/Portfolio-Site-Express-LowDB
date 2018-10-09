@@ -125,7 +125,7 @@ section {
 }
 
 .section-heading+.section-content {
-    margin-top: 5rem;
+    margin-top: 0;
 }
 
 .gallery-figure {
@@ -546,6 +546,14 @@ ul {
 
 /* ====================== Create Page CSS ====================== */
 
+#projectName {
+    height: 80px;
+    margin-top: 0px;
+    font-size: 65px;
+    width: 600px;
+}
+
+
 #create-body {
     background-color: #659DBD;
 }
@@ -564,16 +572,45 @@ ul {
 }
 
 .create_form {
-    margin-top: 15px;
+    margin-top: 0px;
 }
-#sumLang{
+
+#sumLang {
     width: 65%;
 }
 
-#pjdate1, #pjdate2{
-    width:35%;
+#pjdate1,
+#pjdate2 {
+    width: 35%;
+}
+
+#ProjectSummary {
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 #projectExplanation {
     width: 100%;
+    margin-top: 0px;
+}
+
+#projectUrl {
+    width: 74%;
+}
+
+#githuburl{
+    width: 68%;
+}
+
+[type=submit]{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left:20px;
 }

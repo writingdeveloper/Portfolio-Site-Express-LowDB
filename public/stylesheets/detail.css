@@ -8,7 +8,11 @@ body {
     -ms-text-size-adjust: none;
     -o-text-size-adjust: none;
     text-size-adjust: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
 }
+
 
 
 h1,
@@ -148,14 +152,15 @@ figure {
 .gallery-title {
     position: relative;
     margin-bottom: 1.5em;
+    height: 25px;
 }
 
 .gallery-title::before {
     color: #30b7e8;
     display: inline-block;
-    width: 130px;
+    width: 60px;
     position: relative;
-    left: -0.05em;
+    left: -0.25em;
     vertical-align: -0.1em;
     line-height: 1;
     font-size: 64px;
@@ -312,6 +317,7 @@ table {
 /* Markdown */
 .Box--condensed {
     line-height: 1.25;
+    margin-top: 50px;
 }
 
 .Box {
@@ -352,10 +358,236 @@ h6 {
     font-family: "Quicksand", sans-serif;
 }
 
-div#readme h1{
+div#readme h1 {
     font-size: 20px;
 }
 
-.Box-title{
-    padding:0px;
+.Box-title {
+    padding: 0px;
+}
+
+.markdown-body h1 {
+    padding-bottom: 0.3em;
+    font-size: 2em;
+    border-bottom: 1px solid #eaecef;
+}
+
+/* Footer */
+#footer {
+    background: #282a2f;
+}
+
+#footer,
+#footer a {
+    color: white;
+}
+
+.l-footer {
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-widget-group {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.l-footer-holder {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.l-section-holder {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.footer-widget {
+    flex: 1 auto;
+    padding: 1em 3em 1em 0;
+}
+
+.footer-content {
+    margin-top: 2rem;
+    font-family: "Quicksand", sans-serif;
+}
+
+#footer,
+#footer a {
+    color: white;
+}
+
+.credit-list {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+p,
+dl,
+ol,
+ul {
+    word-break: keep-all;
+}
+
+.credit-item {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.credit-right {
+    margin-left: 1em;
+    opacity: .66;
+}
+
+.icons {
+    width: 20px;
+    height: 20px;
+}
+
+.fi,
+.icons {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-content {
+    margin-top: 2rem;
+    font-family: "Quicksand", sans-serif;
+}
+
+.unstyled-list {
+    padding: 0;
+    list-style: none;
+}
+
+p,
+dl,
+ol,
+ul {
+    word-break: keep-all;
+}
+
+.iconed-text {
+    margin-left: .5em;
+}
+
+.footer-heading {
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#backToTopButton {
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 12px 1px rgba(0, 0, 0, 0.12);
+    display: block;
+    width: 64px;
+    height: 64px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    transition: background .3s, color .3s;
+}
+
+#backToTop.is-visible {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity .3s;
+}
+
+#backToTop {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear .3s, opacity .3s;
+}
+
+#backToTop .text {
+    display: block;
+    line-height: 1;
+    font-size: 11px;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+
+#backToTop #go_up {
+    border-width: 1px 0 0 1px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    -moz-transform: translateX(-50%) rotate(45deg);
+    -ms-transform: translateX(-50%) rotate(45deg);
+    -webkit-transform: translateX(-50%) rotate(45deg);
+    transform: translateX(-50%) rotate(45deg);
+    transition: border-color .3s;
+}
+
+#Delete.is-visible {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity .3s;
+}
+
+#Delete {
+    position: fixed;
+    right: 80px;
+    bottom: 800px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear .3s, opacity .3s;
+}
+
+#DeleteButton {
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 12px 1px rgba(0, 0, 0, 0.12);
+    display: block;
+    width: 64px;
+    height: 64px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    transition: background .3s, color .3s;
+}
+
+#Delete #go_up {
+    border-width: 1px 0 0 1px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    -moz-transform: translateX(-50%) rotate(45deg);
+    -ms-transform: translateX(-50%) rotate(45deg);
+    -webkit-transform: translateX(-50%) rotate(45deg);
+    transform: translateX(-50%) rotate(45deg);
+    transition: border-color .3s;
+}
+
+#Delete .text {
+    display: block;
+    line-height: 1;
+    font-size: 11px;
+    text-align: center;
+    text-transform: lowercase;
 }
