@@ -12,7 +12,6 @@ section#works.l-section(role='region')
       span.secondary Portfolio
       span.primary= name
     #portfolio.section-content.gallery.alternate
-      // 포트폴리오 엔트리: 예술의 전당
       article#work1.gallery-item(role='article')
         figure.gallery-figure(role='group')
           .gallery-image
@@ -125,3 +124,20 @@ aside#backToTop.is-visible
       | page
       br
       b top
+aside#Delete.is-visible
+  form(method="post" action=`/delete_process/${id}`)
+   input(type='submit')
+  a#DeleteButton(role='button')
+    img(src='https://png.icons8.com/ios/35/000000/waste-filled.png' id="go_up")
+    span.text
+      | Delete
+      br
+      b this
+
+//- aside#backToTop.is-visible
+//-   a#backToTopButton(role='button', href='#')
+//-     img(src='https://png.icons8.com/ios-glyphs/50/666666/collapse-arrow.png' id="go_up")
+//-     span.text
+//-       | Delete
+//-       br
+//-       b this
