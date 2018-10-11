@@ -25,6 +25,8 @@ li {
   color: #333;
 }
 
+
+
 .viewDetail {
   background-color: orange;
   border-bottom: 3px solid #eee;
@@ -211,9 +213,16 @@ nav h1 a {
   text-decoration: none;
 }
 
+
+
+
 #restaurants-list p {
-  margin: 0;
+  overflow: hidden;
   font-size: 11pt;
+  width: 285px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
 }
 
 /* #restaurants-list li a {
