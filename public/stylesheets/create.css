@@ -553,6 +553,10 @@ ul {
     width: 600px;
 }
 
+#portfolio-type-select {
+    width: 105px;
+    height: 34px;
+}
 
 #create-body {
     background-color: #659DBD;
@@ -598,12 +602,13 @@ ul {
     width: 74%;
 }
 
-#githuburl{
+#githuburl {
     width: 68%;
 }
 
-[type=submit]{
-    background-color: #4CAF50; /* Green */
+[type=submit] {
+    background-color: #4CAF50;
+    /* Green */
     border: none;
     border-radius: 12px;
     color: white;
@@ -612,5 +617,53 @@ ul {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin-left:20px;
+    margin-left: 20px;
+}
+
+/* Home Button */
+
+#Home.is-visible {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity .3s;
+}
+
+#Home {
+    position: fixed;
+    right: 80px;
+    bottom: 800px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear .3s, opacity .3s;
+}
+
+#HomeButton {
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 12px 1px rgba(0, 0, 0, 0.12);
+    display: block;
+    width: 64px;
+    height: 64px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    transition: background .3s, color .3s;
+}
+
+#Home #go_up {
+    border-width: 1px 0 0 1px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    left: 35%;
+    transition: border-color .3s;
+}
+
+#Home .text {
+    display: block;
+    line-height: 1;
+    font-size: 11px;
+    text-align: center;
+    text-transform: lowercase;
 }

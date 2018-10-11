@@ -132,13 +132,8 @@ nav h1 a {
   text-decoration: underline;
 }
 
+/* ====================== BIO ====================== */
 
-/* ====================== Map ====================== */
-#map {
-  height: 400px;
-  width: 100%;
-  background-color: #ccc;
-}
 
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
@@ -155,6 +150,7 @@ nav h1 a {
   font-weight: normal;
   line-height: 1;
   margin: 0 20px;
+  padding-left: 2%;
 }
 
 .filter-options select {
@@ -167,6 +163,7 @@ nav h1 a {
   margin: 10px;
   padding: 0 10px;
   width: 200px;
+  margin-left: 3%;
 }
 
 /* ====================== Restaurant Listing ====================== */
@@ -192,13 +189,65 @@ nav h1 a {
   width: 270px;
 }
 
+.type-box {
+  background-color: #333;
+  width: 330px;
+  margin-left: -30px;
+}
+
+.type-box>.Project {
+  background-color: transparent;
+  height: 44px;
+  width: 270px;
+  margin-left: 30px;
+  padding-left: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 200;
+  font-size: 20px;
+  color:rgb(76, 201, 250);
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.type-box>.Certificate {
+  background-color: transparent;
+  height: 44px;
+  width: 270px;
+  margin-left: 30px;
+  padding-left: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 200;
+  font-size: 20px;
+  color: #F0E68C;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+.type-box>.Education {
+  background-color: transparent;
+  height: 44px;
+  width: 270px;
+  margin-left: 30px;
+  padding-left: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 200;
+  font-size: 20px;
+  color:white;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
 #restaurants-list .restaurant-img {
   background-color: #ccc;
   display: block;
   margin: 0;
-  max-width: 100%;
-  min-height: 248px;
-  min-width: 100%;
+  width: 270px;
+  height: 248px;
 }
 
 #restaurants-list li h1 {
@@ -211,19 +260,31 @@ nav h1 a {
   margin: 20px 0 10px;
   text-transform: uppercase;
   text-decoration: none;
+
+  overflow: hidden;
+  width: 305px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
+.element{
+  overflow: hidden;
+  width: 305px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
 
-
-
-#restaurants-list p {
+li>p {
   overflow: hidden;
   font-size: 11pt;
   width: 285px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;  
+  -webkit-box-orient: vertical;
 }
+
 
 /* #restaurants-list li a {
   /* background-color: orange;
