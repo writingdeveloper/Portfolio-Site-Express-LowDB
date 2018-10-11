@@ -21,11 +21,11 @@ form(method='post', action=`/update_process/${id}` enctype="multipart/form-data"
               img.gallery-image-thumb(src=`../images/${imgurl}`)
             figcaption.gallery-caption
               h3.gallery-title Edited Name will be Display here!
-              select#portfolio-type-select(name='portfoliotype' class="create_form")
+              select#portfolio-type-select(name='portType' class="create_form")
                   option(value="" selected disabled hidden) Choose Type
-                  option(value='project') Projects
-                  option(value='cert') Certifications
-                  option(value='education') Education
+                  option(value='Project') Projects
+                  option(value='Certificate') Certifications
+                  option(value='Education') Education
               ul.gallery-spec
                 li.gallery-spec-item
                   strong.gallery-spec-key Programming Language
