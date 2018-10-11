@@ -176,6 +176,7 @@ router.post('/update_process/:pageId', upload.single('projectImg'), function (re
   }).assign({
     id: id,
     name: req.body.projectName,
+    type: req.body.portType,
     url: req.body.projectUrl,
     explanation: req.body.projectExplanation,
     imgurl: checkImg,
