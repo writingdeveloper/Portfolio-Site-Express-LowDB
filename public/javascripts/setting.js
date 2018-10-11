@@ -19,7 +19,7 @@ function validateForm() {
     let projectUrl = document.getElementById('searchForm').projectUrl.value;
     // let githuburl = document.getElementById('searchForm').githuburl.value;
     // let imgData = document.getElementById('searchForm').projectImg.value;
-    let portType=document.getElementById('searchForm').portfoliotype.value;
+    let portType=document.getElementById('searchForm').portType.value;
 
     if (projectName, sumLang, pjdate1, pjdate2, projectExplanation, projectUrl, portType === "") {
         alert('Some Fields are Empty!');
