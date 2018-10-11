@@ -173,9 +173,10 @@ figure {
     padding: 0;
 }
 
+
 .gallery-image-thumb {
-    width: 730px;
-    max-height: 444px;
+    width: auto;
+    height: 444px;
 }
 
 .gallery-item {
@@ -534,11 +535,7 @@ ul {
     height: 16px;
     position: absolute;
     top: 16px;
-    left: 50%;
-    -moz-transform: translateX(-50%) rotate(45deg);
-    -ms-transform: translateX(-50%) rotate(45deg);
-    -webkit-transform: translateX(-50%) rotate(45deg);
-    transform: translateX(-50%) rotate(45deg);
+    left: 35%;
     transition: border-color .3s;
 }
 
@@ -576,15 +573,105 @@ ul {
     height: 20px;
     position: absolute;
     top: 10px;
-    left: 50%;
-    -moz-transform: translateX(-50%) rotate(45deg);
-    -ms-transform: translateX(-50%) rotate(45deg);
-    -webkit-transform: translateX(-50%) rotate(45deg);
-    transform: translateX(-50%) rotate(45deg);
+    left: 35%;
     transition: border-color .3s;
 }
 
 #Delete .text {
+    display: block;
+    line-height: 1;
+    font-size: 11px;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+/* Update Button */
+
+#Update.is-visible {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity .3s;
+}
+
+#Update {
+    position: fixed;
+    right: 158px;
+    bottom: 800px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear .3s, opacity .3s;
+}
+#UpdateButton {
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 12px 1px rgba(0, 0, 0, 0.12);
+    display: block;
+    width: 64px;
+    height: 64px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    transition: background .3s, color .3s;
+}
+
+#Update #go_up {
+    border-width: 1px 0 0 1px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    left: 35%;
+    transition: border-color .3s;
+}
+
+#Update .text {
+    display: block;
+    line-height: 1;
+    font-size: 11px;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+/* Home Button */
+
+#Home.is-visible {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity .3s;
+}
+
+#Home {
+    position: fixed;
+    right: 238px;
+    bottom: 800px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear .3s, opacity .3s;
+}
+#HomeButton {
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 12px 1px rgba(0, 0, 0, 0.12);
+    display: block;
+    width: 64px;
+    height: 64px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    transition: background .3s, color .3s;
+}
+
+#Home #go_up {
+    border-width: 1px 0 0 1px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    left: 35%;
+    transition: border-color .3s;
+}
+
+#Home .text {
     display: block;
     line-height: 1;
     font-size: 11px;
