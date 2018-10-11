@@ -5,7 +5,7 @@ head
   meta(http-equiv='X-UA-Compatible', content='ie=edge')
   title Project Detail
   link(rel='stylesheet', href='stylesheets/detail.css')
-// 작업물
+  script(src='javascripts/setting.js')
 section#works.l-section(role='region')
   .l-section-holder
     h2.section-heading(data-animation='fade-up')
@@ -126,11 +126,24 @@ aside#backToTop.is-visible
       b top
 aside#Delete.is-visible
   form(method="post" action=`/delete_process/${id}`)
-   input(type='submit')
+   input(type='image' src='https://png.icons8.com/ios/35/000000/waste-filled.png' id="go_up" onclick="return checkDelete()")
   a#DeleteButton(role='button')
-    img(src='https://png.icons8.com/ios/35/000000/waste-filled.png' id="go_up")
     span.text
       | Delete
+      br
+      b this
+aside#Home.is-visible
+  a#HomeButton(role='button', href='/')
+    img(src="https://png.icons8.com/ios/50/000000/home-page.png" id="go_up")
+    span.text
+      | Go
+      br
+      b home
+aside#Update.is-visible
+  a#UpdateButton(role='button', href=`/update/${id}`)
+    img(src="https://png.icons8.com/windows/50/000000/edit-file.png" id="go_up")
+    span.text
+      | Update
       br
       b this
 

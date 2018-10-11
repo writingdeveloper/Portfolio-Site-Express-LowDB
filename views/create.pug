@@ -12,7 +12,7 @@ form(method='post', action='/create_process' enctype="multipart/form-data" id="s
       h2.section-heading
         span.secondary Create Page
         span.primary
-            label(for="projectName") Project Name :
+            label(for="projectName") Name :
             input(type="text" id="projectName" name="projectName" class="create_form")
       #portfolio.section-content.gallery.alternate
         article#work1.gallery-item(role='article')
@@ -21,6 +21,11 @@ form(method='post', action='/create_process' enctype="multipart/form-data" id="s
               img.gallery-image-thumb(src=`${imgurl}`)
             figcaption.gallery-caption
               h3.gallery-title Project Name will be Display here!
+                select#portfolio-type-select(name='portType' class="create_form")
+                  option(value="" selected disabled hidden) Choose Type
+                  option(value='Project') Projects
+                  option(value='Certificate') Certifications
+                  option(value='Education') Education
               ul.gallery-spec
                 li.gallery-spec-item
                   strong.gallery-spec-key Programming Language
@@ -139,6 +144,13 @@ form(method='post', action='/create_process' enctype="multipart/form-data" id="s
         | page
         br
         b top
+  aside#Home.is-visible
+    a#HomeButton(role='button', href='/')
+      img(src="https://png.icons8.com/ios/50/000000/home-page.png" id="go_up")
+      span.text
+        | Go
+        br
+        b home      
 
 
 

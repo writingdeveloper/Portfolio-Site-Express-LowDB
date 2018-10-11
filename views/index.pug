@@ -6,37 +6,30 @@ block content
       h1
         a(href='/') Si Hyeong Lee's Portfolio
   main#maincontent
-    section#map-container
-      #map(aria-label='location', role='application')
     section
       .filter-options
         h2 Filter Results
         select#neighborhoods-select(name='neighborhoods', onchange='updateRestaurants()')
-          option(value='all') All Neighborhoods
-        select#cuisines-select(name='cuisines', onchange='updateRestaurants()')
-          option(value='all') All Cuisines
+          option(value='all') All Achievements
+          option(value='project') Projects
+          option(value='cert') Certifications
+          option(value='education') Education
         button(type='button' onclick="window.location.href='/create'") Create Information
     - var projects = dataarray
     ul#restaurants-list
       each projects in dataarray
-        li
+        li(class=`${projects.type}`)
+          .type-box
+            p(class=`${projects.type}`)=`${projects.type}`
           img.restaurant-img(src=`/images/${projects.imgurl}`)
-          a(href=`${projects.url}`)
+          a(href=`/${projects.id}`)
             h1= projects.name
-          p= 'URL : ' + projects.url
-          p= projects.explanation
-          a(href= '/' + projects.id class="viewDetail") View Details
-
-      //- ul#restaurants-list
-      //-   li
-      //-     img.restaurant-img(alt='Mission Chinese Food', src='/images/reactchat.png')
-      //-     h1
-      //-       =`${name}`
-      //-     p
-      //-       ='URL : ' + `${url}`
-      //-     p
-      //-       =`${explanation}`
-      //-     a(href=`/${name}`) View Details
+          p(class="element" style="font-weight: bold")= `Element : ${projects.sumlang}`
+          p(class="explanation")= `${projects.explanation}`
+            br
+            br
+            br
+          a(href= '/' + `${projects.id}` class="viewDetail") View Details
 
   script(type='application/javascript', charset='utf-8', src='javascripts/setting.js')
   script(type='application/javascript', charset='utf-8', src='javascripts/sw_register.js')

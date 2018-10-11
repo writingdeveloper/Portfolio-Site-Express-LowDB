@@ -12,7 +12,7 @@ form(method='post', action=`/update_process/${id}` enctype="multipart/form-data"
       h2.section-heading
         span.secondary Update Page
         span.primary
-            label(for="projectName") Project Name :
+            label(for="projectName") Name :
             input(type="text" id="projectName" name="projectName" class="create_form" value=`${name}`)
       #portfolio.section-content.gallery.alternate
         article#work1.gallery-item(role='article')
@@ -20,7 +20,12 @@ form(method='post', action=`/update_process/${id}` enctype="multipart/form-data"
             .gallery-image
               img.gallery-image-thumb(src=`../images/${imgurl}`)
             figcaption.gallery-caption
-              h3.gallery-title Edited Project Name will be Display here!
+              h3.gallery-title Edited Name will be Display here!
+              select#portfolio-type-select(name='portfoliotype' class="create_form")
+                  option(value="" selected disabled hidden) Choose Type
+                  option(value='project') Projects
+                  option(value='cert') Certifications
+                  option(value='education') Education
               ul.gallery-spec
                 li.gallery-spec-item
                   strong.gallery-spec-key Programming Language
