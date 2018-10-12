@@ -9,11 +9,11 @@ block content
     section
       .filter-options
         h2 Filter Results
-        select#neighborhoods-select(name='neighborhoods', onchange='updateRestaurants()')
-          option(value='all') All Achievements
-          option(value='project') Projects
-          option(value='cert') Certifications
-          option(value='education') Education
+        select#neighborhoods-select(name='neighborhoods', onchange='selectBoxUpdate();')
+          option(value='All') All Achievements
+          option(value='Project') Projects
+          option(value='Certification') Certifications
+          option(value='Education') Education
         button(type='button' onclick="window.location.href='/create'") Create Information
     - var projects = dataarray
     ul#restaurants-list
