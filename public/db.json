@@ -44,8 +44,8 @@
       "explanation": "This project has already been completed and has been able to use Jasmine to perform tests for individual functions, called TDD. The required tests for the project (RSS feed testing, RSS feed properties, menu default state, and menu hiding / showing) are all provided and adequately tested.",
       "imgurl": "Cap 2018-10-10 17-07-03-551.png",
       "sumlang": "HTML5, CSS3, JavaScript, Jasmine",
-      "pjdate1": "2018-09-01",
-      "pjdate2": "2018-09-01",
+      "pjdate1": "2018-09",
+      "pjdate2": "2018-09",
       "githuburl": "https://github.com/sangumee/Udacity-Feed-Reader-Testing"
     },
     {
