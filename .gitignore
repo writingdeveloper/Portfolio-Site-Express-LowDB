@@ -62,3 +62,4 @@ typings/
 
 .coveralls.yml
 public/db.json
+*.json
