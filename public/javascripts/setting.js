@@ -86,30 +86,6 @@ function selectBoxUpdate() {
     }
 }
 
-function hideSelectedItem() {
-    let hideCertification = document.getElementsByClassName('Certificate');
-    let hideEducation = document.getElementsByClassName('Education');
-
-    for (var i = 0; i < hideCertification.length; i++) {
-        hideCertification[i].style.display = 'none';
-    }
-    for (var i = 0; i < hideEducation.length; i++) {
-        hideEducation[i].style.display = 'none';
-    }
-}
-
-function recoverExceptSelectedItem() {
-
-    var appBanners = document.getElementsByClassName('Project'),
-        i;
-
-    for (var i = 0; i < appBanners.length; i++) {
-        appBanners[i].style.display = 'visible';
-    }
-
-}
-
-
 
 /* ---------- CREATE PAGE ---------- */
 
