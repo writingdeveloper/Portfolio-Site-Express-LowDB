@@ -175,8 +175,8 @@ figure {
 }
 
 .gallery-image-thumb {
-    width: 730px;
-    max-height: 444px;
+    width: auto;
+    height: 444px;
 }
 
 .gallery-item {

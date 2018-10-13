@@ -18,13 +18,13 @@ form(method='post', action=`/update_process/${id}` enctype="multipart/form-data"
         article#work1.gallery-item(role='article')
           figure.gallery-figure(role='group')
             .gallery-image
-              img.gallery-image-thumb(src=`../images/${imgurl}`)
+              img.gallery-image-thumb(src=`../images/${imgurl}` onerror=`this.src='/images/app/${type}.png'`)
             figcaption.gallery-caption
               h3.gallery-title Edited Name will be Display here!
               select#portfolio-type-select(name='portType' class="create_form")
-                  option(value="" selected disabled hidden) Choose Type
-                  option(value='Project') Projects
-                  option(value='Certificate') Certifications
+                  option(value=`${type}` selected hidden)= `${type}`
+                  option(value='Project') Project
+                  option(value='Certificate') Certification
                   option(value='Education') Education
               ul.gallery-spec
                 li.gallery-spec-item
@@ -44,7 +44,7 @@ form(method='post', action=`/update_process/${id}` enctype="multipart/form-data"
                 strong.gallery-spec-key Github repository Link
                 input(type="text" id="githuburl" name="githuburl" class="create_form" placeholder="This form will get Github Repos README.md file" value=`${githuburl}`)
                 strong.gallery-spec-key Image Upload
-                  input(type="file" id="projectImg" name="projectImg" class="create_form" accept="image/*")
+                  input(type="file" id="projectImg" name="projectImg" class="create_form" accept="image/*" value=`${imgurl}`)
                   input(type="submit")
         #readme.Box.Box--condensed.instapaper_body.md
         .Box-header.px-2.clearfix

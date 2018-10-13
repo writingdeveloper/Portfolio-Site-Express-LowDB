@@ -8,14 +8,14 @@ head
   script(src='javascripts/setting.js')
 section#works.l-section(role='region')
   .l-section-holder
-    h2.section-heading(data-animation='fade-up')
+    h2.section-heading
       span.secondary Portfolio
       span.primary= name
     #portfolio.section-content.gallery.alternate
       article#work1.gallery-item(role='article')
         figure.gallery-figure(role='group')
           .gallery-image
-            img.gallery-image-thumb(src=`/images/${imgurl}`)
+            img.gallery-image-thumb(src=`/images/${imgurl}` onerror=`this.src='/images/app/${type}.png'`)
           figcaption.gallery-caption
             h3.gallery-title= name
             ul.gallery-spec
