@@ -227,6 +227,18 @@
       "pjdate1": "2018-07",
       "pjdate2": "2018-10",
       "githuburl": ""
+    },
+    {
+      "id": "kbAK9KPtx",
+      "name": "Portfolio with NodJS and Express",
+      "type": "Project",
+      "url": "https://sangumee-portfolio.herokuapp.com/",
+      "explanation": "This project is a portfolio web application that implements the Create, Read, Update, and Delete functions using NodeJS, Express, and JSON management DB, LowDB.",
+      "imgurl": "Cap 2018-10-13 20-03-17-691.png",
+      "sumlang": "NodeJS, Express, LowDB, JSON",
+      "pjdate1": "2018-10",
+      "pjdate2": "2018-10",
+      "githuburl": "https://github.com/sangumee/Udacity-Build-a-Portfolio-Site-Express"
     }
   ]
 }
