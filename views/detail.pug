@@ -5,6 +5,12 @@ head
   meta(http-equiv='X-UA-Compatible', content='ie=edge')
   title Project Detail
   link(rel='stylesheet', href='stylesheets/detail.css')
+  // BootStrap CDN
+  script(src='https://code.jquery.com/jquery-3.3.1.min.js')
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css')
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js')
+  // Main Script Load
   script(src='javascripts/setting.js')
 section#works.l-section(role='region')
   .l-section-holder
@@ -83,40 +89,40 @@ footer#footer.l-footer(role='contentinfo')
               //
               img(src="https://png.icons8.com/material-outlined/50/ffffff/new-post.png" class="icons")
               //
-                                                
+
               span.iconed-text super2451894@gmail.com
               //
-            //
+              //
           li
             //
             span(title='전화')
               //
               img(src='https://png.icons8.com/material/50/ffffff/google-mobile.png' class="icons")
               //
-                                                
+
               span.iconed-text +82 10 3736 9328
               //
-            //
+              //
           li
             //
             span(title='카카오톡')
               //
               img(src='https://png.icons8.com/ios/50/ffffff/speech-bubble.png' class="icons")
               //
-                                                
+
               span.iconed-text leesihung@KakaoTalk
               //
-            //
+              //
           li
             //
             a(href='https://github.com/sangumee', target='_blank', title='깃허브')
               //
               img(src='https://png.icons8.com/windows/50/ffffff/github.png' class="icons")
               //
-                                                
+
               span.iconed-text Github Account
               //
-            //
+              //
 aside#backToTop.is-visible
   a#backToTopButton(role='button', href='#')
     img(src='https://png.icons8.com/ios-glyphs/50/666666/collapse-arrow.png' id="go_up")
@@ -126,7 +132,7 @@ aside#backToTop.is-visible
       b top
 aside#Delete.is-visible
   form(method="post" action=`/delete_process/${id}`)
-   input(type='image' src='https://png.icons8.com/ios/35/000000/waste-filled.png' id="go_up" onclick="return checkDelete()")
+    input(type='image' src='https://png.icons8.com/ios/35/000000/waste-filled.png' id="go_up" onclick="return checkDelete()")
   a#DeleteButton(role='button')
     span.text
       | Delete

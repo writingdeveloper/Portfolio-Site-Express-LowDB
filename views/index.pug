@@ -14,7 +14,7 @@ block content
           option(value='Project') Projects
           option(value='Certificate') Certifications
           option(value='Education') Education
-        button(type='button' onclick="window.location.href='/create'") Create Information
+        button(class='button' type='button' onclick="window.location.href='/create'") Create Information
     - var projects = dataarray
     ul#restaurants-list
       each projects in dataarray
@@ -24,7 +24,7 @@ block content
           img.restaurant-img(src=`/images/${projects.imgurl}` onerror=`this.src='/images/app/${projects.type}.png'`)
           a(href=`/${projects.id}`)
             h1= projects.name
-          p(class="element" style="font-weight: bold")= `Element : ${projects.sumlang}`
+          p(class="element" style="font-weight: bold")= `Keyword : ${projects.sumlang}`
           p(class="explanation")= `${projects.explanation}`
             br
             br
