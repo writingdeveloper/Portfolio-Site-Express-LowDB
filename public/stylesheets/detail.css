@@ -383,14 +383,6 @@ div#readme h1 {
     transition: visibility 0s linear 0s, opacity .3s;
 }
 
-#Delete {
-    position: fixed;
-    right: 80px;
-    bottom: 800px;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s linear .3s, opacity .3s;
-}
 
 #DeleteButton {
     background: white;

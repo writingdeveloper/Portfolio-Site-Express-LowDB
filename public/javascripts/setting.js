@@ -8,6 +8,9 @@ function checkDelete() {
 /* ---------- Main PAGE ---------- */
 
 // Show Selected Items
+/*
+Now It works well, but It needs to change because too many iteration
+*/
 function selectBoxUpdate() {
     let selectedValue = document.getElementById('neighborhoods-select').value;
     if (selectedValue === 'All') {

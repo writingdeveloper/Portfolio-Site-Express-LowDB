@@ -5,6 +5,14 @@ head
   meta(http-equiv='X-UA-Compatible', content='ie=edge')
   title Project Detail
   link(rel='stylesheet', href='../stylesheets/create.css')
+  script(src='https://code.jquery.com/jquery-3.3.1.min.js')
+  // 합쳐지고 최소화된 최신 CSS
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css')
+  // 부가적인 테마
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css')
+  // 합쳐지고 최소화된 최신 자바스크립트
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js')
+  // Main Script Load
   script(src='../javascripts/setting.js')
 form(method='post', action=`/update_process/${id}` enctype="multipart/form-data" id="searchForm" onsubmit="return validateForm()")
   section#works.l-section(role='region')

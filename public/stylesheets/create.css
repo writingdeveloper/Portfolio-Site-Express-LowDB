@@ -14,34 +14,6 @@ body {
 }
 
 
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
-    line-height: 1.2;
-    font-family: "Quicksand", sans-serif;
-    font-weight: normal;
-}
-
-p,
-dl,
-ol,
-ul {
-    word-break: keep-all;
-}
-
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
 a {
     background-color: transparent;
     color: #30b7e8;
@@ -74,15 +46,17 @@ dir {
 }
 
 .l-section {
-    min-height: 100vh;
-    padding: 15vh 100px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
     position: relative;
     box-sizing: border-box;
-    padding-top: 30px;
+    margin: 0 auto;
 }
 
-.l-section {
-    background: white;
+.l-section-holder {
+    max-width: 1320px;
+    margin: 0 auto;
 }
 
 article,
@@ -151,7 +125,9 @@ figure {
 
 .gallery-title {
     position: relative;
-    margin-bottom: 1.5em;
+    margin-top: 0px;
+    margin-bottom: 75px;
+    padding-top: 0px;
     height: 25px;
 }
 
@@ -175,9 +151,11 @@ figure {
 }
 
 .gallery-image-thumb {
-    width: auto;
+    width: 100%;
+    max-width: 765px;
     height: 444px;
 }
+
 
 .gallery-item {
     margin: 0 0 5rem;
@@ -331,14 +309,11 @@ table {
     padding: 8px 16px;
 }
 
-.px-2 {
-    padding-right: 8px !important;
-    padding-left: 8px !important;
-}
 
 .Box-header {
     padding: 16px;
-    margin: -1px -1px 0 -1px;
+    margin-right: 0px;
+    margin-left: 0px;
     background-color: #f6f8fa;
     border-color: #d1d5da;
     border-style: solid;
@@ -347,17 +322,6 @@ table {
     border-top-right-radius: 3px;
 }
 
-div#readme p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
-    padding: 15px 15px 15px 15px;
-    font-family: "Quicksand", sans-serif;
-}
 
 div#readme h1 {
     font-size: 20px;
@@ -391,18 +355,14 @@ div#readme h1 {
 .footer-widget-group {
     padding-top: 50px;
     padding-bottom: 50px;
-    display: flex;
-    flex-flow: row wrap;
 }
 
-.l-footer-holder {
-    padding-left: 100px;
-    padding-right: 100px;
-}
 
 .l-section-holder {
     max-width: 1320px;
     margin: 0 auto;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .footer-widget {
@@ -424,13 +384,6 @@ div#readme h1 {
     margin: 0 auto;
     padding: 0;
     list-style: none;
-}
-
-p,
-dl,
-ol,
-ul {
-    word-break: keep-all;
 }
 
 .credit-item {
@@ -492,6 +445,83 @@ ul {
     padding-bottom: 0px;
 }
 
+
+/* ====================== Create Page CSS ====================== */
+
+#projectName {
+    height: 80px;
+    margin-top: 0px;
+    font-size: 65px;
+    width: 60%;
+}
+
+#portfolio-type-select {
+    width: 105px;
+    height: 34px;
+}
+
+#create-body {
+    background-color: #659DBD;
+}
+
+#create_p {
+    display: inline;
+}
+
+#create-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.create_form {
+    margin-top: 7px;
+}
+
+#sumLang {
+    width: 65%;
+}
+
+#pjdate1,
+#pjdate2 {
+    width: 30%;
+}
+
+#ProjectSummary {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#projectExplanation {
+    width: 100%;
+    margin-top: 0px;
+}
+
+#projectUrl {
+    width: 74%;
+}
+
+#githuburl {
+    width: 68%;
+}
+
+[type=submit] {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
 #backToTopButton {
     background: white;
     border-radius: 50%;
@@ -529,95 +559,14 @@ ul {
 
 
 #backToTop #go_up {
-    border: solid #94979c;
     border-width: 1px 0 0 1px;
     display: block;
     width: 16px;
     height: 16px;
     position: absolute;
     top: 16px;
-    left: 50%;
-    -moz-transform: translateX(-50%) rotate(45deg);
-    -ms-transform: translateX(-50%) rotate(45deg);
-    -webkit-transform: translateX(-50%) rotate(45deg);
-    transform: translateX(-50%) rotate(45deg);
+    left: 35%;
     transition: border-color .3s;
-}
-
-/* ====================== Create Page CSS ====================== */
-
-#projectName {
-    height: 80px;
-    margin-top: 0px;
-    font-size: 65px;
-    width: 600px;
-}
-
-#portfolio-type-select {
-    width: 105px;
-    height: 34px;
-}
-
-#create-body {
-    background-color: #659DBD;
-}
-
-#create_p {
-    display: inline;
-}
-
-#create-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 100vh;
-}
-
-.create_form {
-    margin-top: 0px;
-}
-
-#sumLang {
-    width: 65%;
-}
-
-#pjdate1,
-#pjdate2 {
-    width: 35%;
-}
-
-#ProjectSummary {
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-
-#projectExplanation {
-    width: 100%;
-    margin-top: 0px;
-}
-
-#projectUrl {
-    width: 74%;
-}
-
-#githuburl {
-    width: 68%;
-}
-
-[type=submit] {
-    background-color: #4CAF50;
-    /* Green */
-    border: none;
-    border-radius: 12px;
-    color: white;
-    padding: 10px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-left: 20px;
 }
 
 /* Home Button */
@@ -626,15 +575,6 @@ ul {
     visibility: visible;
     opacity: 1;
     transition: visibility 0s linear 0s, opacity .3s;
-}
-
-#Home {
-    position: fixed;
-    right: 80px;
-    bottom: 800px;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s linear .3s, opacity .3s;
 }
 
 #HomeButton {
@@ -666,4 +606,14 @@ ul {
     font-size: 11px;
     text-align: center;
     text-transform: lowercase;
+}
+
+/* Home Button */
+#Home {
+    position: fixed;
+    right: 106px;
+    bottom: 30px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear .3s, opacity .3s;
 }
