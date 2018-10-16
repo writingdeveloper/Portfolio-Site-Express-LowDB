@@ -7,9 +7,14 @@ router.use(bodyParser.json()); // to support JSON-encoded bodies
 router.use(bodyParser.urlencoded({ // to support URL-encoded bodies
   extended: true
 }));
+//
+let favicon = require('serve-favicon');
+router.use(favicon(path.join(__dirname, '../public/images', 'favicon.ico')));
+
+
 // Parsing Dependency
-var cheerio = require('cheerio');
-var request = require('request');
+let cheerio = require('cheerio');
+let request = require('request');
 
 // LowDB Module
 const low = require('lowdb');
@@ -20,8 +25,8 @@ const adapter = new FileSync('./public/db.json');
 const db = low(adapter)
 
 // Multer Module
-var multer = require('multer'); // multer모듈 적용 (for 파일업로드)
-var storage = multer.diskStorage({
+let multer = require('multer'); // multer모듈 적용 (for 파일업로드)
+let storage = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, './public/images/') // cb 콜백함수를 통해 전송된 파일 저장 디렉토리 설정
   },
@@ -29,7 +34,7 @@ var storage = multer.diskStorage({
     cb(null, file.originalname) // cb 콜백함수를 통해 전송된 파일 이름 설정
   }
 })
-var upload = multer({
+let upload = multer({
   storage: storage
 })
 
@@ -260,7 +265,7 @@ router.get('/:pageId', (req, res, next) => {
       console.log(readme + 'ERROR');
     } else {
       // Parsing readme ID in github page
-      var $ = cheerio.load(html);
+      let $ = cheerio.load(html);
       $('#readme').each(function () {
         // save to readme Variable
         readme = $(this).html();
