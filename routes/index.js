@@ -7,10 +7,9 @@ router.use(bodyParser.json()); // to support JSON-encoded bodies
 router.use(bodyParser.urlencoded({ // to support URL-encoded bodies
   extended: true
 }));
-//
+// Favicon Server Dependency
 let favicon = require('serve-favicon');
 router.use(favicon(path.join(__dirname, '../public/images', 'favicon.ico')));
-
 
 // Parsing Dependency
 let cheerio = require('cheerio');
@@ -222,6 +221,16 @@ router.post('/update_process/:pageId', upload.single('projectImg'), function (re
   }).write();
   res.redirect('/' + id);
 });
+
+router.get('/resumeeng', function (req, res, next) {
+  console.log('Hello');
+  res.render('resumeeng', {});
+});
+router.get('/resumekor', function (req, res, next) {
+  console.log('Hello');
+  res.render('resumekor', {});
+});
+
 
 /* GET Detail View Page */
 router.get('/:pageId', (req, res, next) => {
