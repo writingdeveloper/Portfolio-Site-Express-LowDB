@@ -7,7 +7,7 @@
     padding-right: 0px;
     position: relative;
     box-sizing: border-box;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 .l-section-holder {
@@ -159,7 +159,7 @@ figure {
     margin-left: 10px;
 }
 
-#work1Description > p{
+#work1Description>p {
     font-size: 17px;
 }
 
