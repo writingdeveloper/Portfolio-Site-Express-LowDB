@@ -46,7 +46,7 @@ router.get(`/:LinkedInUser`, function(req, res, next) {
       // Log Data
       console.log(data);
       console.log(data.id);
-      res.render("index", {
+      res.render("portfolioItems", {
         dataarray: data
         // id: data.id,
         // userid: data.linkedInName,
