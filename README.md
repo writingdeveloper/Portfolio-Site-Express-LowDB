@@ -1,11 +1,13 @@
-# Udacity-Build-a-Portfolio-Site-Express  
+# Portfolio-Site-Express-LowDB
 [![Build Status](https://travis-ci.org/sangumee/Udacity-Build-a-Portfolio-Site-Express.svg?branch=master)](https://travis-ci.org/sangumee/Udacity-Build-a-Portfolio-Site-Express)
-![](https://img.shields.io/badge/Code%20Statue-Open-brightgreen.svg)
+![](https://img.shields.io/badge/Code%20Statue-Close-Red.svg)
 
 ## Introduction 
 This project redeveloped Udacity's portfolio project using NodeJS, Express Framework and LowDB.
 
 This project allows you to add, read, delete and modify your portfolio information. That is, it performs CRUD function. Most bugs that may occur while using the current program are fixed.
+
+This project is now separate. The current Commit is the final version using the LowDB database. In the future, this project will be changed in a way that is managed using MySQL, and future additions are also supported only in the MySQL version. However, support for code reviews or issues is still valid.
 
 ## DEMO
 Currently, this project provides a demo version using Heroku NodeJS hosting.
@@ -15,8 +17,8 @@ You can access with this link
 
 ## How to Install this Project
 
-This Project is works with NodeJS. If NodeJS is not installed your system. You can download the NodeJS [Here]
-1. Download this Project with this [Link](https://nodejs.org)(https://github.com/sangumee/Udacity-Build-a-Portfolio-Site-Express/archive/master.zip)
+This Project is works with NodeJS. If NodeJS is not installed your system. You can download the NodeJS [Here](https://nodejs.org)
+1. Download this Project with this [Link](https://github.com/sangumee/Udacity-Build-a-Portfolio-Site-Express/archive/master.zip)
 2. Open the console (CMD, BASH... any) and move to the directory that you save this project.
 3. Install dependencies with this command, and NPM will install all of the dependencies in package.json
     ```
