@@ -4,14 +4,14 @@ head
   meta(name='viewport', content='width=device-width, initial-scale=1.0')
   meta(http-equiv='X-UA-Compatible', content='ie=edge')
   title Project Detail
-  link(rel='stylesheet', href='/stylesheets/detail.css')
+  link(rel='stylesheet', href='stylesheets/detail.css')
   // BootStrap CDN
   script(src='https://code.jquery.com/jquery-3.3.1.min.js')
   link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css')
   link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css')
   script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js')
   // Main Script Load
-  script(src='/javascripts/setting.js')
+  script(src='javascripts/setting.js')
 section#works.l-section(role='region')
   .l-section-holder
     h2.section-heading
@@ -131,7 +131,7 @@ aside#backToTop.is-visible
       br
       b top
 aside#Delete.is-visible
-  form(method="post" action=`/${userId}/${id}/delete_process`)
+  form(method="post" action=`/delete_process/${id}`)
     input(type='image' src='https://png.icons8.com/ios/35/000000/waste-filled.png' id="go_up" onclick="return checkDelete()")
   a#DeleteButton(role='button')
     span.text

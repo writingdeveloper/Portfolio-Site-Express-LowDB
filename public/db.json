@@ -241,28 +241,16 @@
       "githuburl": "https://github.com/sangumee/Udacity-Build-a-Portfolio-Site-Express"
     },
     {
-      "id": "0pX97Vu2H",
-      "name": "test",
-      "type": "Project",
-      "url": "fff",
-      "explanation": "fff",
-      "imgurl": "Cap 2018-09-28 01-20-45-485.png",
-      "sumlang": "test",
-      "pjdate1": "2015-05",
-      "pjdate2": "2015-02",
-      "githuburl": "ffff"
-    },
-    {
-      "id": "FiYkmrEhl",
-      "name": "Sample",
-      "type": "Project",
-      "url": "fsfsf",
-      "explanation": "5555",
-      "imgurl": "Cap 2018-09-28 10-59-53-044.png",
-      "sumlang": "HTML5, CSS3, JavaScript",
-      "pjdate1": "2015-05",
-      "pjdate2": "2015-05",
-      "githuburl": "https://github.com/AhsanAyaz/cordova-app-crash"
+      "id": "hsWjisi-e",
+      "name": "Inflearn Basic React.js Course",
+      "type": "Certificate",
+      "url": "",
+      "explanation": "This course is a 'REACT Core Course for Beginners' from Inflearn. Includes the process of developing contact management apps with React.JS and JavaScript ES6 grammar.\r\nSerial Number: 125714-158906-103828",
+      "imgurl": "Cap 2018-10-29 17-08-19-872.png",
+      "sumlang": "NodeJS, React, ",
+      "pjdate1": "2018-10",
+      "pjdate2": "2018-10",
+      "githuburl": "https://github.com/sangumee/study-react.js"
     }
   ]
 }
