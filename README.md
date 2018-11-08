@@ -1,5 +1,5 @@
 # Portfolio-Site-Express-LowDB
-[![Build Status](https://travis-ci.org/sangumee/Udacity-Build-a-Portfolio-Site-Express.svg?branch=master)](https://travis-ci.org/sangumee/Udacity-Build-a-Portfolio-Site-Express)
+[![Build Status](https://travis-ci.org/sangumee/Portfolio-Site-Express-LowDB.svg?branch=master)](https://travis-ci.org/sangumee/Udacity-Build-a-Portfolio-Site-Express)
 ![](https://img.shields.io/badge/Code%20Statue-Close-Red.svg)
 
 ## Introduction 
