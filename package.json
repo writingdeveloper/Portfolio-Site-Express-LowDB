@@ -1,7 +1,6 @@
 {
-  "name": "udacity-build-a-portfolio-site-express",
+  "name": "portfolio-site-lowdb",
   "version": "0.0.0",
-  "private": true,
   "scripts": {
     "start": "node ./bin/www"
   },
@@ -19,5 +18,18 @@
     "serve-favicon": "^2.5.0",
     "shortid": "^2.2.13",
     "supervisor": "^0.12.0"
-  }
+  },
+  "description": "[![Build Status](https://travis-ci.org/sangumee/Portfolio-Site-Express-LowDB.svg?branch=master)](https://travis-ci.org/sangumee/Udacity-Build-a-Portfolio-Site-Express) ![](https://img.shields.io/badge/Code%20Statue-Close-Red.svg)",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sangumee/Udacity-Build-a-Portfolio-Site-Express.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sangumee/Udacity-Build-a-Portfolio-Site-Express/issues"
+  },
+  "homepage": "https://github.com/sangumee/Udacity-Build-a-Portfolio-Site-Express#readme"
 }
